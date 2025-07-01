@@ -1,14 +1,16 @@
-# Simple C++ Operations Project
-
+Simple C++ Operations Project
 This is a basic C++ console program that allows the user to:
-- Calculate power of a number
-- Check if numbers are even or odd
-- Calculate the average of 4 numbers
 
-## How to Run
+🔢 Calculate the power of a number using loops
+🔍 Check if numbers are even or odd
+📊 Calculate the average of four numbers
 
-Compile using g++:
+💻 How to Run
+Make sure you have a C++ compiler installed (like g++)
+Then compile and run the program using the following commands:
 
 ```bash
 g++ main.cpp -o program
 ./program
+🙋‍♂️ Author
+Made with ❤️ by SA3DWY (عمرو)
