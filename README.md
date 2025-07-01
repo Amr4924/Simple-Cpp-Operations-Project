@@ -12,5 +12,5 @@ Then compile and run the program using the following commands:
 ```bash
 g++ main.cpp -o program
 ./program
-🙋‍♂️ Author
-Made with ❤️ by SA3DWY (عمرو)
+## 🙋‍♂️ Author
+Made with ❤️ by SA3DWY (عمرو) (https://www.linkedin.com/in/amr-sa3dwy-53a51a343 )
