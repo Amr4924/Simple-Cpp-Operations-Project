@@ -13,4 +13,4 @@ Then compile and run the program using the following commands:
 g++ main.cpp -o program
 ./program
 ## 🙋‍♂️ Author
-Made with ❤️ by SA3DWY (عمرو) (https://www.linkedin.com/in/amr-sa3dwy-53a51a343 )
+Made with ❤️ by SA3DWY (Amr) (https://www.linkedin.com/in/amr-sa3dwy-53a51a343 )
