@@ -8,25 +8,35 @@ A comprehensive console-based calculator application written in C++ that provide
 
 ## 🌟 Features
 
-This Smart Calculator offers four fundamental mathematical operations:
+This Smart Calculator offers five comprehensive mathematical operations:
+
+### ➕ Basic Arithmetic Operations
+- Perform multiple calculations in sequence (addition, subtraction, multiplication, division)
+- Chain operations with real-time results
+- Division by zero protection with error handling
+- Enter '=' to get final results
 
 ### 🔢 Exponentiation
 - Calculate the power of any number using efficient loop-based implementation
 - Custom algorithm for power calculation without using built-in functions
+- Supports any positive integer exponent
 
 ### 🔍 Even/Odd Number Detection
-- Analyze up to 4 numbers simultaneously
+- Analyze unlimited numbers in a single session
 - Instant classification of numbers as even or odd
 - Batch processing for multiple numbers
+- Enter '0' to finish input and get results
 
 ### 📊 Average Calculator
-- Calculate the arithmetic mean of 4 numbers
+- Calculate the arithmetic mean of any quantity of numbers
 - Supports decimal numbers with high precision
-- Real-time calculation and display
+- Dynamic input - enter as many numbers as needed
+- Enter '0' to finish input and calculate average
 
 ### 🧮 Factorial Calculator
 - Compute factorial of any positive integer
 - Loop-based implementation for educational purposes
+- Supports large numbers with long long int precision
 - Clear step-by-step calculation display
 
 ## 🚀 Getting Started
@@ -72,11 +82,12 @@ This Smart Calculator offers four fundamental mathematical operations:
 ## 🎮 Usage
 
 1. **Launch the application** - The Smart Calculator welcome screen will appear
-2. **Select an operation** - Choose from 4 available mathematical operations:
-   - Press `1` for Exponentiation
-   - Press `2` for Even/Odd Check
-   - Press `3` for Average Calculation
-   - Press `4` for Factorial Calculation
+2. **Select an operation** - Choose from 5 available mathematical operations:
+   - Press `1` for Basic Arithmetic Operations
+   - Press `2` for Exponentiation
+   - Press `3` for Even/Odd Check
+   - Press `4` for Average Calculation
+   - Press `5` for Factorial Calculation
 3. **Follow the prompts** - Enter the required numbers based on your selection
 4. **View results** - The calculator will display the computed results
 5. **Continue or exit** - Choose to perform another operation or exit the program
@@ -88,17 +99,34 @@ This Smart Calculator offers four fundamental mathematical operations:
      Smart Calculator Installed!     
 =====================================
 
-[1] The first operation is the process of calculating the exponent.
-[2] The second operation is the process of checking if the numbers are even or odd.
-[3] The third operation is the process of calculating the average of four numbers.
-[4] The fourth operation is the process of calculating the factorial of a number.
+[1] The first operation is basic arithmetic operations.
+[2] The second operation is the process of calculating the exponent.
+[3] The third operation is the process of checking if the numbers are even or odd.
+[4] The fourth operation is the process of calculating the average of four numbers.
+[5] The fifth operation is the process of calculating the factorial of a number.
 
-Enter Number (1) Or (2) Or (3) Or (4): 1
-You have chosen the exponentiation operation.
-Enter the number and power.
-Enter a number: 5
-Enter the number of times to square it: 3
-The square: 125
+Enter Number (1) Or (2) Or (3) Or (4) Or (5): 1
+*******************************
+You have chosen the basic arithmetic operations.
+*******************************
+Enter The Number: 
+10
+Choose the operation: ( + | - | * | / )
+Select ( = ) for results:-
++
+Enter The Number: 
+5
+Choose the operation: ( + | - | * | / )
+Select ( = ) for results:-
+*
+Enter The Number: 
+2
+Choose the operation: ( + | - | * | / )
+Select ( = ) for results:-
+=
+******************
+result: 30
+******************
 ```
 
 ## 🏗️ Project Structure
@@ -117,18 +145,21 @@ Simple-Cpp-Operations-Project/
 
 | Function | Purpose | Parameters | Return Type |
 |----------|---------|------------|-------------|
-| `square()` | Calculate power using loops | `int numOne, int os` | `int` |
-| `even()` | Check even/odd for array | `int nums[4], int count` | `void` |
-| `avg()` | Calculate average | `double nums[4], int count` | `double` |
-| `factorial()` | Calculate factorial | `int fct` | `int` |
+| `exponent()` | Calculate power using loops | `int numOne, int os` | `int` |
+| `even()` | Check even/odd for vector | `vector<int> nums` | `void` |
+| `avg()` | Calculate average | `vector<double> nums` | `double` |
+| `factorial()` | Calculate factorial | `long long int fct` | `int` |
 
 ### Key Features
 
-- **Memory Efficient**: Uses arrays with fixed size for optimal performance
+- **Memory Efficient**: Uses dynamic vectors for flexible input handling
 - **Input Validation**: Handles invalid user inputs gracefully
-- **User-Friendly Interface**: Clear prompts and formatted output
+- **User-Friendly Interface**: Clear prompts and formatted output with visual separators
 - **Modular Design**: Separate functions for each mathematical operation
 - **Cross-Platform**: Compatible with Windows, Linux, and macOS
+- **Extended Arithmetic**: Comprehensive basic operations with chaining capability
+- **Dynamic Input**: No fixed limits on number of inputs for most operations
+- **Error Handling**: Division by zero protection and input validation
 
 ## 🤝 Contributing
 
