@@ -1,43 +1,66 @@
-# Smart Calculator - Simple C++ Operations
+# Smart Calculator V3.0 - Advanced C++ Operations Suite
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Amr4924)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/amr-sa3dwy-53a51a343)
 [![C++](https://img.shields.io/badge/C++-Programming-blue?logo=cplusplus)](https://isocpp.org/)
+[![TikTok](https://img.shields.io/badge/TikTok-Follow-ff0050?logo=tiktok)](https://www.tiktok.com/@3mr675)
 
-A comprehensive console-based calculator application written in C++ that provides essential mathematical operations with an intuitive user interface.
+A comprehensive console-based calculator application written in C++ that provides essential mathematical operations, geometric calculations, and unit conversions with an intuitive user interface and smart operation history tracking.
 
 ## 🌟 Features
 
-This Smart Calculator offers five comprehensive mathematical operations:
+This Smart Calculator V3.0 offers seven comprehensive mathematical and geometric operations:
 
-### ➕ Basic Arithmetic Operations
+### ➕ Advanced Arithmetic Operations
 - Perform multiple calculations in sequence (addition, subtraction, multiplication, division)
-- Chain operations with real-time results
-- Division by zero protection with error handling
-- Enter '=' to get final results
+- Chain operations with real-time results and smart operation history tracking
+- Division by zero protection with comprehensive error handling
+- Operation and number history storage for future enhancements
+- Enter '=' to get final results with calculation steps
 
-### 🔢 Exponentiation
+### 🔢 Exponentiation Calculator
 - Calculate the power of any number using efficient loop-based implementation
 - Custom algorithm for power calculation without using built-in functions
 - Supports any positive integer exponent
+- Educational approach showing manual computation
 
-### 🔍 Even/Odd Number Detection
+### 🔍 Even/Odd Number Analyzer
 - Analyze unlimited numbers in a single session
 - Instant classification of numbers as even or odd
-- Batch processing for multiple numbers
-- Enter '0' to finish input and get results
+- Batch processing for multiple numbers with dynamic vector storage
+- Enter '0' to finish input and get comprehensive results
 
-### 📊 Average Calculator
+### 📊 Dynamic Average Calculator
 - Calculate the arithmetic mean of any quantity of numbers
 - Supports decimal numbers with high precision
-- Dynamic input - enter as many numbers as needed
+- Dynamic input system - enter as many numbers as needed
+- Flexible vector-based storage system
 - Enter '0' to finish input and calculate average
 
-### 🧮 Factorial Calculator
+### 🧮 Advanced Factorial Calculator
 - Compute factorial of any positive integer
 - Loop-based implementation for educational purposes
 - Supports large numbers with long long int precision
-- Clear step-by-step calculation display
+- Clear step-by-step calculation display with descriptive output
+
+### 🔺 Triangle Geometry Calculator
+- **Basic Area Calculation**: Using base and height formula (1/2 × base × height)
+- **Heron's Formula**: Calculate area using three sides with validation
+- **Perimeter Calculation**: Sum of all three sides
+- **Input Validation**: Checks for valid triangle sides
+- **Error Handling**: Comprehensive validation for geometric constraints
+
+### 🔄 Unit Conversion System
+- **Length Conversions**: 
+  - Centimeters ↔ Meters
+  - Meters ↔ Kilometers
+  - Centimeters ↔ Kilometers
+- **Area Conversions**:
+  - Square Centimeters ↔ Square Meters
+  - Square Meters ↔ Square Kilometers
+  - Square Centimeters ↔ Square Kilometers
+- **Bidirectional Support**: Convert in both directions for all units
+- **Precision Results**: High-accuracy conversion calculations
 
 ## 🚀 Getting Started
 
@@ -82,14 +105,16 @@ This Smart Calculator offers five comprehensive mathematical operations:
 ## 🎮 Usage
 
 1. **Launch the application** - The Smart Calculator welcome screen will appear
-2. **Select an operation** - Choose from 5 available mathematical operations:
-   - Press `1` for Basic Arithmetic Operations
-   - Press `2` for Exponentiation
-   - Press `3` for Even/Odd Check
-   - Press `4` for Average Calculation
-   - Press `5` for Factorial Calculation
+2. **Select an operation** - Choose from 7 available mathematical operations:
+   - Press `1` for Advanced Arithmetic Operations
+   - Press `2` for Exponentiation Calculator
+   - Press `3` for Even/Odd Number Analyzer
+   - Press `4` for Dynamic Average Calculator
+   - Press `5` for Advanced Factorial Calculator
+   - Press `6` for Triangle Geometry Calculator
+   - Press `7` for Unit Conversion System
 3. **Follow the prompts** - Enter the required numbers based on your selection
-4. **View results** - The calculator will display the computed results
+4. **View results** - The calculator will display the computed results with formatting
 5. **Continue or exit** - Choose to perform another operation or exit the program
 
 ### Example Usage
@@ -104,28 +129,30 @@ This Smart Calculator offers five comprehensive mathematical operations:
 [3] The third operation is the process of checking if the numbers are even or odd.
 [4] The fourth operation is the process of calculating the average of four numbers.
 [5] The fifth operation is the process of calculating the factorial of a number.
+[6] The sixth operation is the process of calculating the area and perimeter of a triangle.
+[7] The seventh operation is the process of converting between different units of length and area.
 
-Enter Number (1) Or (2) Or (3) Or (4) Or (5): 1
+Enter Number (1) Or (2) Or (3) Or (4) Or (5) Or (6) Or (7): 1
 *******************************
 You have chosen the basic arithmetic operations.
 *******************************
 Enter The Number: 
-10
-Choose the operation: ( + | - | * | / )
-Select ( = ) for results:-
-+
-Enter The Number: 
-5
+15
 Choose the operation: ( + | - | * | / )
 Select ( = ) for results:-
 *
 Enter The Number: 
-2
+3
+Choose the operation: ( + | - | * | / )
+Select ( = ) for results:-
+-
+Enter The Number: 
+5
 Choose the operation: ( + | - | * | / )
 Select ( = ) for results:-
 =
 ******************
-result: 30
+result: 40
 ******************
 ```
 
@@ -134,9 +161,10 @@ result: 30
 ```
 Simple-Cpp-Operations-Project/
 │
-├── Simple Operations.cpp    # Main source code file
-├── Simple Operations.exe    # Compiled executable (Windows)
-└── README.md               # Project documentation
+├── main.cpp                    # Main source code file (V3.0)
+├── Simple Operations.cpp       # Legacy version
+├── Simple Operations.exe       # Compiled executable (Windows)
+└── README.md                  # Project documentation
 ```
 
 ## 🔧 Technical Details
@@ -145,21 +173,30 @@ Simple-Cpp-Operations-Project/
 
 | Function | Purpose | Parameters | Return Type |
 |----------|---------|------------|-------------|
+| `options()` | Display menu options | `vector<string> option` | `void` |
+| `BasicOperations()` | Advanced arithmetic with history | `vector<double> nums, vector<char> printOp` | `double` |
 | `exponent()` | Calculate power using loops | `int numOne, int os` | `int` |
 | `even()` | Check even/odd for vector | `vector<int> nums` | `void` |
-| `avg()` | Calculate average | `vector<double> nums` | `double` |
+| `avg()` | Calculate average of vector | `vector<double> nums` | `double` |
 | `factorial()` | Calculate factorial | `long long int fct` | `int` |
+| `AreaOfTriangle()` | Basic triangle area | `double Base, double Height` | `double` |
+| `Heron()` | Triangle area (Heron's formula) | `double side1, double side2, double side3` | `double` |
+| `PerimeterOfTriangle()` | Triangle perimeter | `double side1, double side2, double side3` | `double` |
+| `LengthConversion()` | Convert length units | `double value, int option` | `string` |
+| `ConvertSpaces()` | Convert area units | `double value, int option` | `string` |
 
 ### Key Features
 
-- **Memory Efficient**: Uses dynamic vectors for flexible input handling
-- **Input Validation**: Handles invalid user inputs gracefully
-- **User-Friendly Interface**: Clear prompts and formatted output with visual separators
+- **Smart Memory Management**: Uses dynamic vectors for flexible input handling
+- **Operation History Tracking**: Stores numbers and operations for future enhancements
+- **Comprehensive Input Validation**: Handles invalid user inputs gracefully
+- **Professional User Interface**: Clear prompts, visual separators, and screen management
 - **Modular Design**: Separate functions for each mathematical operation
-- **Cross-Platform**: Compatible with Windows, Linux, and macOS
-- **Extended Arithmetic**: Comprehensive basic operations with chaining capability
-- **Dynamic Input**: No fixed limits on number of inputs for most operations
-- **Error Handling**: Division by zero protection and input validation
+- **Cross-Platform Compatibility**: Compatible with Windows, Linux, and macOS
+- **Extended Mathematical Operations**: From basic arithmetic to advanced geometry
+- **Dynamic Input System**: No fixed limits on number of inputs for most operations
+- **Advanced Error Handling**: Division by zero protection, triangle validation, and input checking
+- **Social Integration**: Automatic browser opening to developer's social profiles
 
 ## 🤝 Contributing
 
@@ -188,14 +225,18 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - **GitHub:** [@Amr4924](https://github.com/Amr4924)
 - **LinkedIn:** [Amr Sa3dwy](https://www.linkedin.com/in/amr-sa3dwy-53a51a343)
+- **TikTok:** [@3mr675](https://www.tiktok.com/@3mr675)
 
-Feel free to reach out for questions, suggestions, or collaboration opportunities!
+Feel free to reach out for questions, suggestions, collaboration opportunities, or just to connect!
 
 ## 🙏 Acknowledgments
 
 - Thanks to the C++ community for inspiration and best practices
 - Special thanks to everyone who contributes to open-source education
+- Appreciation for geometric mathematics and unit conversion principles
 
 ---
 
 ⭐ **Star this repository if you found it helpful!** ⭐
+
+*Built with passion for mathematics and clean code* 💻✨
