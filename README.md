@@ -1,15 +1,36 @@
-# Smart Calculator V3.0 - Advanced C++ Operations Suite
+# Smart Calculator V3.5 - Enhanced Modular C++ Suite
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Amr4924)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/amr-sa3dwy-53a51a343)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.lin## - Maintain the modular architecture when adding new functions
+
+## 📈 Version History
+
+- **V3.5** - Enhanced modular architecture with header file organization
+- **V3.0** - Added triangle geometry and unit conversion systems
+- **V2.0** - Enhanced arithmetic operations with operation history
+- **V1.0** - Basic calculator with fundamental operations
+
+## 📝 License History
+
+- **V3.5** - Enhanced modular architecture with header file organization
+- **V3.0** - Added triangle geometry and unit conversion systems
+- **V2.0** - Enhanced arithmetic operations with operation history
+- **V1.0** - Basic calculator with fundamental operationscom/in/amr-sa3dwy-53a51a343)
 [![C++](https://img.shields.io/badge/C++-Programming-blue?logo=cplusplus)](https://isocpp.org/)
 [![TikTok](https://img.shields.io/badge/TikTok-Follow-ff0050?logo=tiktok)](https://www.tiktok.com/@3mr675)
 
-A comprehensive console-based calculator application written in C++ that provides essential mathematical operations, geometric calculations, and unit conversions with an intuitive user interface and smart operation history tracking.
+A comprehensive console-based calculator application written in C++ featuring enhanced modular architecture, header file organization, and advanced mathematical operations with intuitive user interface and smart operation history tracking.
 
 ## 🌟 Features
 
-This Smart Calculator V3.0 offers seven comprehensive mathematical and geometric operations:
+This Smart Calculator V3.5 features **enhanced modular architecture** with seven comprehensive mathematical and geometric operations:
+
+### 🏗️ **ENHANCED: Improved Code Organization**
+- **Modular File Structure** - Separated main logic from operations
+- **Header File Organization** - Clean `operations.h` interface
+- **Better Maintainability** - Easier to extend and modify
+- **Cleaner Code Structure** - Improved project organization
+- **Enhanced Readability** - Better code navigation and understanding
 
 ### ➕ Advanced Arithmetic Operations
 - Perform multiple calculations in sequence (addition, subtraction, multiplication, division)
@@ -78,29 +99,31 @@ This Smart Calculator V3.0 offers seven comprehensive mathematical and geometric
    cd Simple-Cpp-Operations-Project
    ```
 
-2. **Compile the program:**
+2. **Compile the modular project:**
    
    **For Windows (MinGW/MSYS2):**
    ```bash
-   g++ -fdiagnostics-color=always -g "Simple Operations.cpp" -o "Simple Operations.exe"
+   g++ -fdiagnostics-color=always -g "main.cpp" -o "SmartCalculator.exe"
    ```
    
    **For Linux/macOS:**
    ```bash
-   g++ "Simple Operations.cpp" -o "Simple_Operations"
+   g++ "main.cpp" -o "SmartCalculator"
    ```
 
 3. **Run the application:**
    
    **Windows:**
    ```bash
-   .\Simple Operations.exe
+   .\SmartCalculator.exe
    ```
    
    **Linux/macOS:**
    ```bash
-   ./Simple_Operations
+   ./SmartCalculator
    ```
+
+**Note:** The project uses header file `operations.h` which contains all function declarations. Make sure both `main.cpp` and `operations.h` are in the same directory during compilation.
 
 ## 🎮 Usage
 
@@ -156,47 +179,76 @@ result: 40
 ******************
 ```
 
-## 🏗️ Project Structure
+## 🏗️ Project Architecture
 
 ```
 Simple-Cpp-Operations-Project/
 │
-├── main.cpp                    # Main source code file (V3.0)
-├── Simple Operations.cpp       # Legacy version
-├── Simple Operations.exe       # Compiled executable (Windows)
+├── main.cpp                    # Main application entry point
+├── operations.h                # Header file with function declarations  
+├── Simple Operations.cpp       # Legacy monolithic version
+├── Simple Operations.exe       # Legacy compiled executable
+├── SmartCalculator.exe         # New modular compiled executable
 └── README.md                  # Project documentation
 ```
 
-## 🔧 Technical Details
+### 🔧 Modular Design Benefits
+
+- **Separation of Concerns**: Main logic separated from operation implementations
+- **Header File Organization**: Clean interface definitions in `operations.h`
+- **Improved Readability**: Easier to navigate and understand code structure
+- **Enhanced Maintainability**: Simpler to add new features or modify existing ones
+- **Better Code Organization**: Follows good practices for C++ projects
+- **Future-Ready**: Prepared for potential expansion into multiple source files
+
+## 🔧 Technical Implementation
+
+### Header File Structure (`operations.h`)
+```cpp
+// Function declarations for all mathematical operations
+void options(vector<string> option);
+double BasicOperations(vector<double> nums, vector<char> printOp);
+int exponent(int numOne, int os);
+void even(vector<int> nums);
+double avg(vector<double> nums);
+int factorial(long long int fct);
+double AreaOfTriangle(double Base, double Height);
+double Heron(double HeightOne, double HeightTwo, double HeightThree);
+double PerimeterOfTriangle(double HeightOne, double HeightTwo, double HeightThree);
+string LengthConversion(double value, int option);
+string ConvertSpaces(double value, int option);
+```
 
 ### Functions Overview
 
-| Function | Purpose | Parameters | Return Type |
-|----------|---------|------------|-------------|
-| `options()` | Display menu options | `vector<string> option` | `void` |
-| `BasicOperations()` | Advanced arithmetic with history | `vector<double> nums, vector<char> printOp` | `double` |
-| `exponent()` | Calculate power using loops | `int numOne, int os` | `int` |
-| `even()` | Check even/odd for vector | `vector<int> nums` | `void` |
-| `avg()` | Calculate average of vector | `vector<double> nums` | `double` |
-| `factorial()` | Calculate factorial | `long long int fct` | `int` |
-| `AreaOfTriangle()` | Basic triangle area | `double Base, double Height` | `double` |
-| `Heron()` | Triangle area (Heron's formula) | `double side1, double side2, double side3` | `double` |
-| `PerimeterOfTriangle()` | Triangle perimeter | `double side1, double side2, double side3` | `double` |
-| `LengthConversion()` | Convert length units | `double value, int option` | `string` |
-| `ConvertSpaces()` | Convert area units | `double value, int option` | `string` |
+| Function | Purpose | Parameters | Return Type | Location |
+|----------|---------|------------|-------------|----------|
+| `options()` | Display menu options | `vector<string> option` | `void` | operations.h |
+| `BasicOperations()` | Advanced arithmetic with history | `vector<double> nums, vector<char> printOp` | `double` | operations.h |
+| `exponent()` | Calculate power using loops | `int numOne, int os` | `int` | operations.h |
+| `even()` | Check even/odd for vector | `vector<int> nums` | `void` | operations.h |
+| `avg()` | Calculate average of vector | `vector<double> nums` | `double` | operations.h |
+| `factorial()` | Calculate factorial | `long long int fct` | `int` | operations.h |
+| `AreaOfTriangle()` | Basic triangle area | `double Base, double Height` | `double` | operations.h |
+| `Heron()` | Triangle area (Heron's formula) | `double side1, side2, side3` | `double` | operations.h |
+| `PerimeterOfTriangle()` | Triangle perimeter | `double side1, side2, side3` | `double` | operations.h |
+| `LengthConversion()` | Convert length units | `double value, int option` | `string` | operations.h |
+| `ConvertSpaces()` | Convert area units | `double value, int option` | `string` | operations.h |
 
-### Key Features
+### Key Technical Features
 
+- **Enhanced Modular Architecture**: Clean separation between interface and implementation
+- **Header File Management**: Proper use of header guards and function declarations
 - **Smart Memory Management**: Uses dynamic vectors for flexible input handling
 - **Operation History Tracking**: Stores numbers and operations for future enhancements
 - **Comprehensive Input Validation**: Handles invalid user inputs gracefully
 - **Professional User Interface**: Clear prompts, visual separators, and screen management
-- **Modular Design**: Separate functions for each mathematical operation
 - **Cross-Platform Compatibility**: Compatible with Windows, Linux, and macOS
 - **Extended Mathematical Operations**: From basic arithmetic to advanced geometry
 - **Dynamic Input System**: No fixed limits on number of inputs for most operations
 - **Advanced Error Handling**: Division by zero protection, triangle validation, and input checking
 - **Social Integration**: Automatic browser opening to developer's social profiles
+- **Good Coding Practices**: Follows C++ best practices and coding conventions
 
 ## 🤝 Contributing
 
@@ -211,11 +263,20 @@ Contributions are welcome! Here's how you can help:
 ### Contribution Guidelines
 
 - Follow C++ best practices and coding standards
-- Add comments for complex logic
-- Test your changes thoroughly
+- Use proper header file organization for new features
+- Add comprehensive comments for complex logic
+- Test your changes thoroughly across different platforms
 - Update documentation if necessary
+- Maintain the modular architecture when adding new functions
 
-## 📝 License
+## � Version History
+
+- **V3.5** - Professional modular architecture with header file organization
+- **V3.0** - Added triangle geometry and unit conversion systems
+- **V2.0** - Enhanced arithmetic operations with operation history
+- **V1.0** - Basic calculator with fundamental operations
+
+## �📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
@@ -234,9 +295,10 @@ Feel free to reach out for questions, suggestions, collaboration opportunities, 
 - Thanks to the C++ community for inspiration and best practices
 - Special thanks to everyone who contributes to open-source education
 - Appreciation for geometric mathematics and unit conversion principles
+- Recognition of modular programming principles and enhanced software architecture
 
 ---
 
 ⭐ **Star this repository if you found it helpful!** ⭐
 
-*Built with passion for mathematics and clean code* 💻✨
+*Built with passion for mathematics, clean code, and enhanced software architecture* 💻✨
