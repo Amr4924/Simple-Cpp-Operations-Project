@@ -1,3 +1,15 @@
+/*
+ * Smart Calculator - Mathematical Operations Header
+ * Copyright (c) 2025 Amr Saadawy (@Amr4924)
+ * 
+ * LICENSE: Educational Use Only
+ * This software is licensed for EDUCATIONAL PURPOSES ONLY.
+ * Commercial use is strictly prohibited.
+ * See LICENSE file for full terms and conditions.
+ * 
+ * Contact: https://www.linkedin.com/in/amr-sa3dwy-53a51a343
+ */
+
 #ifndef OPERATIONS_H
 #define OPERATIONS_H
 

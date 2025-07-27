@@ -1,7 +1,18 @@
 # Smart Calculator V3.5 - Enhanced Modular C++ Suite
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Amr4924)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.lin## - Maintain the modular architecture when adding new functions
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.lin## - Maintain the mod## 📝 License
+
+This project is licensed under the **MIT License - Educational Use Only**.
+
+**⚠️ IMPORTANT LICENSING TERMS:**
+- ✅ **Educational Use**: Free for learning, academic projects, and skill development
+- ❌ **Commercial Use**: Prohibited - No selling, distributing for profit, or commercial integration
+- 📚 **Purpose**: Designed specifically for educational and learning purposes
+
+For full license terms and conditions, see the [LICENSE](LICENSE) file.
+
+For commercial licensing inquiries, please contact the author through LinkedIn.r architecture when adding new functions
 
 ## 📈 Version History
 

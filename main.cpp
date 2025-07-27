@@ -1,3 +1,15 @@
+/*
+ * Smart Calculator - Advanced Mathematical Operations
+ * Copyright (c) 2025 Amr Saadawy (@Amr4924)
+ * 
+ * LICENSE: Educational Use Only
+ * This software is licensed for EDUCATIONAL PURPOSES ONLY.
+ * Commercial use is strictly prohibited.
+ * See LICENSE file for full terms and conditions.
+ * 
+ * Contact: https://www.linkedin.com/in/amr-sa3dwy-53a51a343
+ */
+
 #include "operations.h"
 #include <iostream>
 #include <string>
@@ -307,8 +319,8 @@ int main()
         cout << "=====================================\n";
 
 
-        system("start chrome www.linkedin.com/in/amr-sa3dwy-53a51a343");
-        system("start chrome https://www.tiktok.com/@3mr675?is_from_webapp=1&sender_device=pc");
+        system("start chrome https://www.linkedin.com/in/amr-sa3dwy-53a51a343");
+        system("start chrome https://www.tiktok.com/@3mr675");
         system("start chrome https://github.com/Amr4924");
         return 0;
     }
