@@ -1,315 +1,386 @@
-# Smart Calculator V3.5 - Enhanced Modular C++ Suite
+# 🧮 Smart Calculator V3.5
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Amr4924)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.lin## - Maintain the mod## 📝 License
+[![GitHub stars](https://img.shields.io/github/stars/Amr4924/Simple-Cpp-Operations-Project?style=social)](https://github.com/Amr4924/Simple-Cpp-Operations-Project)
+[![GitHub forks](https://img.shields.io/github/forks/Amr4924/Simple-Cpp-Operations-Project?style=social)](https://github.com/Amr4924/Simple-Cpp-Operations-Project/fork)
+[![GitHub issues](https://img.shields.io/github/issues/Amr4924/Simple-Cpp-Operations-Project)](https://github.com/Amr4924/Simple-Cpp-Operations-Project/issues)
+[![License: Educational](https://img.shields.io/badge/License-Educational%20Only-green.svg)](LICENSE)
 
-This project is licensed under the **MIT License - Educational Use Only**.
-
-**⚠️ IMPORTANT LICENSING TERMS:**
-- ✅ **Educational Use**: Free for learning, academic projects, and skill development
-- ❌ **Commercial Use**: Prohibited - No selling, distributing for profit, or commercial integration
-- 📚 **Purpose**: Designed specifically for educational and learning purposes
-
-For full license terms and conditions, see the [LICENSE](LICENSE) file.
-
-For commercial licensing inquiries, please contact the author through LinkedIn.r architecture when adding new functions
-
-## 📈 Version History
-
-- **V3.5** - Enhanced modular architecture with header file organization
-- **V3.0** - Added triangle geometry and unit conversion systems
-- **V2.0** - Enhanced arithmetic operations with operation history
-- **V1.0** - Basic calculator with fundamental operations
-
-## 📝 License History
-
-- **V3.5** - Enhanced modular architecture with header file organization
-- **V3.0** - Added triangle geometry and unit conversion systems
-- **V2.0** - Enhanced arithmetic operations with operation history
-- **V1.0** - Basic calculator with fundamental operationscom/in/amr-sa3dwy-53a51a343)
-[![C++](https://img.shields.io/badge/C++-Programming-blue?logo=cplusplus)](https://isocpp.org/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/amr-sa3dwy-53a51a343)
 [![TikTok](https://img.shields.io/badge/TikTok-Follow-ff0050?logo=tiktok)](https://www.tiktok.com/@3mr675)
+[![C++](https://img.shields.io/badge/C++-17-blue.svg?style=flat&logo=c%2B%2B)](https://isocpp.org/)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)](https://github.com/Amr4924/Simple-Cpp-Operations-Project)
 
-A comprehensive console-based calculator application written in C++ featuring enhanced modular architecture, header file organization, and advanced mathematical operations with intuitive user interface and smart operation history tracking.
+---
 
-## 🌟 Features
+## 📋 Table of Contents
 
-This Smart Calculator V3.5 features **enhanced modular architecture** with seven comprehensive mathematical and geometric operations:
+- [📖 Overview](#-overview)
+- [⚡ Features](#-features)
+- [🏗️ Architecture](#️-architecture)
+- [🚀 Quick Start](#-quick-start)
+- [💻 Installation](#-installation)
+- [📚 Usage](#-usage)
+- [🧪 Examples](#-examples)
+- [📈 Version History](#-version-history)
+- [🤝 Contributing](#-contributing)
+- [📝 License](#-license)
+- [📧 Contact](#-contact)
 
-### 🏗️ **ENHANCED: Improved Code Organization**
-- **Modular File Structure** - Separated main logic from operations
-- **Header File Organization** - Clean `operations.h` interface
-- **Better Maintainability** - Easier to extend and modify
-- **Cleaner Code Structure** - Improved project organization
-- **Enhanced Readability** - Better code navigation and understanding
+---
 
-### ➕ Advanced Arithmetic Operations
-- Perform multiple calculations in sequence (addition, subtraction, multiplication, division)
-- Chain operations with real-time results and smart operation history tracking
-- Division by zero protection with comprehensive error handling
-- Operation and number history storage for future enhancements
-- Enter '=' to get final results with calculation steps
+## 📖 Overview
 
-### 🔢 Exponentiation Calculator
-- Calculate the power of any number using efficient loop-based implementation
-- Custom algorithm for power calculation without using built-in functions
-- Supports any positive integer exponent
-- Educational approach showing manual computation
+**Smart Calculator V3.5** is a comprehensive, modular C++ console application designed for advanced mathematical computations. Built with educational excellence and industry-standard practices, this calculator demonstrates modern C++ programming paradigms while providing powerful computational capabilities.
 
-### 🔍 Even/Odd Number Analyzer
-- Analyze unlimited numbers in a single session
-- Instant classification of numbers as even or odd
-- Batch processing for multiple numbers with dynamic vector storage
-- Enter '0' to finish input and get comprehensive results
+### 🎯 **Project Goals**
+- Demonstrate **modular C++ architecture** with header file organization
+- Provide **comprehensive mathematical operations** for educational purposes
+- Showcase **best practices** in C++ development and code structure
+- Offer **cross-platform compatibility** for diverse learning environments
 
-### 📊 Dynamic Average Calculator
-- Calculate the arithmetic mean of any quantity of numbers
-- Supports decimal numbers with high precision
-- Dynamic input system - enter as many numbers as needed
-- Flexible vector-based storage system
-- Enter '0' to finish input and calculate average
+---
 
-### 🧮 Advanced Factorial Calculator
-- Compute factorial of any positive integer
-- Loop-based implementation for educational purposes
-- Supports large numbers with long long int precision
-- Clear step-by-step calculation display with descriptive output
+## ⚡ Features
 
-### 🔺 Triangle Geometry Calculator
-- **Basic Area Calculation**: Using base and height formula (1/2 × base × height)
-- **Heron's Formula**: Calculate area using three sides with validation
-- **Perimeter Calculation**: Sum of all three sides
-- **Input Validation**: Checks for valid triangle sides
-- **Error Handling**: Comprehensive validation for geometric constraints
+### 🔢 **Core Mathematical Operations**
+| Operation | Description | Input Support |
+|-----------|-------------|---------------|
+| **Basic Arithmetic** | Addition, Subtraction, Multiplication, Division | Dynamic vector-based input |
+| **Exponentiation** | Custom power calculations with integer bases | Flexible power values |
+| **Number Analysis** | Even/Odd classification | Bulk number processing |
+| **Statistical Functions** | Average calculation | Multiple number support |
+| **Factorial Computation** | Efficient factorial algorithms | Large number handling |
 
-### 🔄 Unit Conversion System
+### 📐 **Advanced Geometric Calculations**
+- **Triangle Area Calculation**
+  - Standard base-height formula: `Area = (base × height) / 2`
+  - Heron's formula: `Area = √(s(s-a)(s-b)(s-c))` where `s = (a+b+c)/2`
+- **Triangle Perimeter**: Three-side perimeter computation
+- **Multiple Calculation Methods**: Flexible geometric approaches
+
+### 🔄 **Unit Conversion System**
 - **Length Conversions**: 
-  - Centimeters ↔ Meters
-  - Meters ↔ Kilometers
-  - Centimeters ↔ Kilometers
-- **Area Conversions**:
-  - Square Centimeters ↔ Square Meters
-  - Square Meters ↔ Square Kilometers
-  - Square Centimeters ↔ Square Kilometers
-- **Bidirectional Support**: Convert in both directions for all units
-- **Precision Results**: High-accuracy conversion calculations
+  - cm ⟷ m ⟷ km (bidirectional)
+  - Precise conversion factors
+- **Area Conversions**: 
+  - cm² ⟷ m² ⟷ km² (comprehensive matrix)
+  - Multi-step conversion support
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
+## 🏗️ Architecture
 
-- C++ Compiler (GCC, Clang, or MSVC)
-- Windows/Linux/macOS operating system
-- Basic command line knowledge
+### 📁 **Project Structure**
+```
+Smart-Calculator-V3.5/
+│
+├── 📄 main.cpp           # Application entry point & user interface
+├── 📄 operations.h       # Function declarations & prototypes
+├── 📄 operations.cpp     # Legacy implementation (reference)
+├── 📄 LICENSE           # Educational use license
+├── 📄 README.md         # Project documentation
+└── 📁 .git/             # Version control
+```
 
-### Installation & Compilation
+### 🔧 **Technical Specifications**
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Amr4924/Simple-Cpp-Operations-Project.git
-   cd Simple-Cpp-Operations-Project
-   ```
+| Component | Technology | Version | Purpose |
+|-----------|------------|---------|---------|
+| **Language** | C++ | 17+ | Core implementation |
+| **Architecture** | Header-based | Modular | Code organization |
+| **Data Structures** | STL Vectors | Dynamic | Flexible input handling |
+| **Compiler Support** | GCC/Clang/MSVC | 7.0+/6.0+/2017+ | Cross-platform compilation |
+| **Platform** | Multi-platform | All | Windows/Linux/macOS |
 
-2. **Compile the modular project:**
-   
-   **For Windows (MinGW/MSYS2):**
-   ```bash
-   g++ -fdiagnostics-color=always -g "main.cpp" -o "SmartCalculator.exe"
-   ```
-   
-   **For Linux/macOS:**
-   ```bash
-   g++ "main.cpp" -o "SmartCalculator"
-   ```
+---
 
-3. **Run the application:**
-   
-   **Windows:**
-   ```bash
-   .\SmartCalculator.exe
-   ```
-   
-   **Linux/macOS:**
-   ```bash
-   ./SmartCalculator
-   ```
+## 🚀 Quick Start
 
-**Note:** The project uses header file `operations.h` which contains all function declarations. Make sure both `main.cpp` and `operations.h` are in the same directory during compilation.
+### ⚙️ **Prerequisites**
+- **C++ Compiler**: GCC 7.0+, Clang 6.0+, or MSVC 2017+
+- **Command Line Interface**: Terminal or Command Prompt
+- **Git**: For repository cloning (optional)
 
-## 🎮 Usage
+### 📥 **Installation Steps**
 
-1. **Launch the application** - The Smart Calculator welcome screen will appear
-2. **Select an operation** - Choose from 7 available mathematical operations:
-   - Press `1` for Advanced Arithmetic Operations
-   - Press `2` for Exponentiation Calculator
-   - Press `3` for Even/Odd Number Analyzer
-   - Press `4` for Dynamic Average Calculator
-   - Press `5` for Advanced Factorial Calculator
-   - Press `6` for Triangle Geometry Calculator
-   - Press `7` for Unit Conversion System
-3. **Follow the prompts** - Enter the required numbers based on your selection
-4. **View results** - The calculator will display the computed results with formatting
-5. **Continue or exit** - Choose to perform another operation or exit the program
+```bash
+# 1. Clone the repository
+git clone https://github.com/Amr4924/Simple-Cpp-Operations-Project.git
 
-### Example Usage
+# 2. Navigate to project directory
+cd Simple-Cpp-Operations-Project
+
+# 3. Compile the application
+g++ -std=c++17 -o calculator main.cpp
+
+# 4. Run the calculator
+./calculator          # Linux/macOS
+calculator.exe        # Windows
+```
+
+### 🔨 **Advanced Compilation Options**
+
+```bash
+# Debug build with extensive warnings
+g++ -g -Wall -Wextra -Wpedantic -std=c++17 -o calculator_debug main.cpp
+
+# Optimized release build
+g++ -O3 -DNDEBUG -std=c++17 -o calculator_release main.cpp
+
+# Cross-platform compilation with MinGW (Windows)
+x86_64-w64-mingw32-g++ -std=c++17 -o calculator.exe main.cpp
+```
+
+---
+
+## 💻 Installation
+
+### 🖥️ **Windows**
+```cmd
+# Using MinGW-w64
+g++ -std=c++17 -o calculator.exe main.cpp
+
+# Using MSVC
+cl /EHsc /std:c++17 main.cpp /Fe:calculator.exe
+```
+
+### 🐧 **Linux**
+```bash
+# Ubuntu/Debian
+sudo apt install build-essential
+g++ -std=c++17 -o calculator main.cpp
+
+# CentOS/RHEL
+sudo yum install gcc-c++
+g++ -std=c++17 -o calculator main.cpp
+```
+
+### 🍎 **macOS**
+```bash
+# Install Xcode Command Line Tools
+xcode-select --install
+
+# Compile with Clang
+clang++ -std=c++17 -o calculator main.cpp
+```
+
+---
+
+## 📚 Usage
+
+### 🎮 **Interactive Menu System**
+
+Upon launching, users are presented with a comprehensive menu:
 
 ```
 =====================================
      Smart Calculator Installed!     
 =====================================
 
-[1] The first operation is basic arithmetic operations.
-[2] The second operation is the process of calculating the exponent.
-[3] The third operation is the process of checking if the numbers are even or odd.
-[4] The fourth operation is the process of calculating the average of four numbers.
-[5] The fifth operation is the process of calculating the factorial of a number.
-[6] The sixth operation is the process of calculating the area and perimeter of a triangle.
-[7] The seventh operation is the process of converting between different units of length and area.
+[1] Basic arithmetic operations
+[2] Exponentiation calculations  
+[3] Even/Odd number analysis
+[4] Average calculation
+[5] Factorial computation
+[6] Triangle geometry (Area & Perimeter)
+[7] Unit conversion (Length & Area)
 
-Enter Number (1) Or (2) Or (3) Or (4) Or (5) Or (6) Or (7): 1
-*******************************
-You have chosen the basic arithmetic operations.
-*******************************
-Enter The Number: 
-15
-Choose the operation: ( + | - | * | / )
-Select ( = ) for results:-
-*
-Enter The Number: 
-3
-Choose the operation: ( + | - | * | / )
-Select ( = ) for results:-
--
-Enter The Number: 
-5
-Choose the operation: ( + | - | * | / )
-Select ( = ) for results:-
-=
-******************
-result: 40
-******************
+Enter Number (1-7): _
 ```
 
-## 🏗️ Project Architecture
-
-```
-Simple-Cpp-Operations-Project/
-│
-├── main.cpp                    # Main application entry point
-├── operations.h                # Header file with function declarations  
-├── Simple Operations.cpp       # Legacy monolithic version
-├── Simple Operations.exe       # Legacy compiled executable
-├── SmartCalculator.exe         # New modular compiled executable
-└── README.md                  # Project documentation
-```
-
-### 🔧 Modular Design Benefits
-
-- **Separation of Concerns**: Main logic separated from operation implementations
-- **Header File Organization**: Clean interface definitions in `operations.h`
-- **Improved Readability**: Easier to navigate and understand code structure
-- **Enhanced Maintainability**: Simpler to add new features or modify existing ones
-- **Better Code Organization**: Follows good practices for C++ projects
-- **Future-Ready**: Prepared for potential expansion into multiple source files
-
-## 🔧 Technical Implementation
-
-### Header File Structure (`operations.h`)
-```cpp
-// Function declarations for all mathematical operations
-void options(vector<string> option);
-double BasicOperations(vector<double> nums, vector<char> printOp);
-int exponent(int numOne, int os);
-void even(vector<int> nums);
-double avg(vector<double> nums);
-int factorial(long long int fct);
-double AreaOfTriangle(double Base, double Height);
-double Heron(double HeightOne, double HeightTwo, double HeightThree);
-double PerimeterOfTriangle(double HeightOne, double HeightTwo, double HeightThree);
-string LengthConversion(double value, int option);
-string ConvertSpaces(double value, int option);
-```
-
-### Functions Overview
-
-| Function | Purpose | Parameters | Return Type | Location |
-|----------|---------|------------|-------------|----------|
-| `options()` | Display menu options | `vector<string> option` | `void` | operations.h |
-| `BasicOperations()` | Advanced arithmetic with history | `vector<double> nums, vector<char> printOp` | `double` | operations.h |
-| `exponent()` | Calculate power using loops | `int numOne, int os` | `int` | operations.h |
-| `even()` | Check even/odd for vector | `vector<int> nums` | `void` | operations.h |
-| `avg()` | Calculate average of vector | `vector<double> nums` | `double` | operations.h |
-| `factorial()` | Calculate factorial | `long long int fct` | `int` | operations.h |
-| `AreaOfTriangle()` | Basic triangle area | `double Base, double Height` | `double` | operations.h |
-| `Heron()` | Triangle area (Heron's formula) | `double side1, side2, side3` | `double` | operations.h |
-| `PerimeterOfTriangle()` | Triangle perimeter | `double side1, side2, side3` | `double` | operations.h |
-| `LengthConversion()` | Convert length units | `double value, int option` | `string` | operations.h |
-| `ConvertSpaces()` | Convert area units | `double value, int option` | `string` | operations.h |
-
-### Key Technical Features
-
-- **Enhanced Modular Architecture**: Clean separation between interface and implementation
-- **Header File Management**: Proper use of header guards and function declarations
-- **Smart Memory Management**: Uses dynamic vectors for flexible input handling
-- **Operation History Tracking**: Stores numbers and operations for future enhancements
-- **Comprehensive Input Validation**: Handles invalid user inputs gracefully
-- **Professional User Interface**: Clear prompts, visual separators, and screen management
-- **Cross-Platform Compatibility**: Compatible with Windows, Linux, and macOS
-- **Extended Mathematical Operations**: From basic arithmetic to advanced geometry
-- **Dynamic Input System**: No fixed limits on number of inputs for most operations
-- **Advanced Error Handling**: Division by zero protection, triangle validation, and input checking
-- **Social Integration**: Automatic browser opening to developer's social profiles
-- **Good Coding Practices**: Follows C++ best practices and coding conventions
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit your changes** (`git commit -m 'Add some amazing feature'`)
-4. **Push to the branch** (`git push origin feature/amazing-feature`)
-5. **Open a Pull Request**
-
-### Contribution Guidelines
-
-- Follow C++ best practices and coding standards
-- Use proper header file organization for new features
-- Add comprehensive comments for complex logic
-- Test your changes thoroughly across different platforms
-- Update documentation if necessary
-- Maintain the modular architecture when adding new functions
-
-## � Version History
-
-- **V3.5** - Professional modular architecture with header file organization
-- **V3.0** - Added triangle geometry and unit conversion systems
-- **V2.0** - Enhanced arithmetic operations with operation history
-- **V1.0** - Basic calculator with fundamental operations
-
-## �📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📧 Contact & Support
-
-**Developer:** Amr Sa3dwy
-
-- **GitHub:** [@Amr4924](https://github.com/Amr4924)
-- **LinkedIn:** [Amr Sa3dwy](https://www.linkedin.com/in/amr-sa3dwy-53a51a343)
-- **TikTok:** [@3mr675](https://www.tiktok.com/@3mr675)
-
-Feel free to reach out for questions, suggestions, collaboration opportunities, or just to connect!
-
-## 🙏 Acknowledgments
-
-- Thanks to the C++ community for inspiration and best practices
-- Special thanks to everyone who contributes to open-source education
-- Appreciation for geometric mathematics and unit conversion principles
-- Recognition of modular programming principles and enhanced software architecture
+### 🔄 **Operation Flow**
+1. **Select Operation**: Choose from 7 available mathematical operations
+2. **Input Data**: Enter numbers or values as prompted
+3. **View Results**: See calculated output with clear formatting
+4. **Continue/Exit**: Choose to perform another operation or exit
 
 ---
 
-⭐ **Star this repository if you found it helpful!** ⭐
+## 🧪 Examples
 
-*Built with passion for mathematics, clean code, and enhanced software architecture* 💻✨
+### 🔢 **Basic Arithmetic**
+```cpp
+Input: Enter numbers and operators
+5 + 3 * 2 - 1 / 4
+Output: Result: 10.75
+```
+
+### 📐 **Triangle Area (Heron's Formula)**
+```cpp
+Input: Enter three sides
+Sides: 3, 4, 5
+Calculation: s = (3+4+5)/2 = 6
+Area = √(6×3×2×1) = 6
+Output: Area: 6.00 square units
+```
+
+### 🔄 **Length Conversion**
+```cpp
+Input: Convert 1500 cm to meters
+Calculation: 1500 ÷ 100 = 15
+Output: 15.00 meters
+```
+
+### 🧮 **Factorial Calculation**
+```cpp
+Input: Calculate 5!
+Calculation: 5 × 4 × 3 × 2 × 1
+Output: 120
+```
+
+---
+
+## 📈 Version History
+
+| Version | Release Date | Key Features | Status |
+|---------|--------------|--------------|--------|
+| **V3.5** | Current | Enhanced modular architecture, header organization | ✅ **Active** |
+| **V3.0** | Previous | Triangle geometry, unit conversion systems | 📦 Archived |
+| **V2.0** | Previous | Enhanced arithmetic, operation history | 📦 Archived |
+| **V1.0** | Initial | Basic calculator functionality | 📦 Archived |
+
+### 🆕 **V3.5 Highlights**
+- ✅ **Modular Architecture**: Separated header files for better organization
+- ✅ **Enhanced Documentation**: Comprehensive README with examples
+- ✅ **Cross-Platform Support**: Improved compatibility across systems
+- ✅ **Educational License**: Clear terms for academic use
+
+---
+
+## 🛠️ Development Features
+
+### 🏗️ **Code Architecture**
+- **Header File Organization**: Clean separation of declarations and implementations
+- **STL Integration**: Modern C++ with vector containers and algorithms
+- **Error Handling**: Comprehensive input validation and error messages
+- **Memory Management**: Efficient dynamic memory usage with RAII principles
+
+### 🎨 **User Experience**
+- **Intuitive Interface**: Clear menu system with numbered options
+- **Visual Feedback**: Formatted output with clear result presentation
+- **Continuous Operation**: Loop-based design for multiple calculations
+- **Social Integration**: Automatic browser links to developer profiles
+
+### ⚡ **Performance Features**
+- **Optimized Algorithms**: Efficient mathematical computations
+- **Dynamic Input**: Vector-based data structures for flexible input sizes
+- **Cross-Platform**: Compatible with major operating systems and compilers
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the educational community! Here's how you can help:
+
+### 🔄 **Contribution Workflow**
+
+1. **🍴 Fork** the repository
+2. **🌿 Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **💾 Commit** your changes (`git commit -m 'Add some amazing feature'`)
+4. **🚀 Push** to the branch (`git push origin feature/amazing-feature`)
+5. **📬 Open** a Pull Request
+
+### 📋 **Contribution Guidelines**
+
+#### ✅ **Code Standards**
+- Follow **C++17** standards and best practices
+- Use **consistent naming conventions** (camelCase for variables, PascalCase for functions)
+- Include **comprehensive comments** for complex algorithms
+- Maintain **header file organization** for new features
+
+#### 🧪 **Testing Requirements**
+- Test changes across **multiple platforms** (Windows/Linux/macOS)
+- Verify **compilation** with different compilers (GCC/Clang/MSVC)
+- Ensure **no regression** in existing functionality
+- Add **example usage** for new features
+
+#### 📚 **Documentation**
+- Update **README.md** for new features
+- Include **code comments** for complex logic
+- Provide **usage examples** for new operations
+- Maintain **architectural documentation**
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License - Educational Use Only**.
+
+### ⚖️ **License Terms**
+
+| Usage Type | Status | Description |
+|------------|--------|-------------|
+| 🎓 **Educational** | ✅ **Permitted** | Learning, academic projects, skill development |
+| 🏫 **Academic** | ✅ **Permitted** | University assignments, research projects |
+| 👨‍💻 **Personal Learning** | ✅ **Permitted** | Individual skill building, portfolio projects |
+| 🌐 **Open Source** | ✅ **Permitted** | Contributing to educational repositories |
+| 💼 **Commercial** | ❌ **Prohibited** | Selling, profit generation, commercial integration |
+| 🏭 **Enterprise** | ❌ **Prohibited** | Corporate use without explicit permission |
+
+### 📋 **Full License Information**
+
+For complete license terms and conditions, please see the [LICENSE](LICENSE) file.
+
+### 💬 **Commercial Licensing**
+
+For commercial licensing inquiries, please contact the author through [LinkedIn](https://www.linkedin.com/in/amr-sa3dwy-53a51a343).
+
+---
+
+## 📧 Contact
+
+### 👨‍💻 **Developer Information**
+
+**Amr Sa3dwy** - *Lead Developer & Architect*
+
+### 🌐 **Connect With Me**
+
+| Platform | Link | Purpose |
+|----------|------|---------|
+| 💻 **GitHub** | [@Amr4924](https://github.com/Amr4924) | Code repositories & projects |
+| 💼 **LinkedIn** | [Amr Sa3dwy](https://www.linkedin.com/in/amr-sa3dwy-53a51a343) | Professional networking |
+| 🎥 **TikTok** | [@3mr675](https://www.tiktok.com/@3mr675) | Programming content & tutorials |
+
+### 💌 **Get In Touch**
+
+Feel free to reach out for:
+- ❓ **Questions** about the project
+- 💡 **Suggestions** for improvements  
+- 🤝 **Collaboration** opportunities
+- 🎓 **Educational** discussions
+- 🐛 **Bug reports** or issues
+
+---
+
+## 🙏 Acknowledgments
+
+### 🏆 **Special Thanks**
+
+- **C++ Community**: For inspiration and best practices in modern C++ development
+- **Educational Contributors**: Everyone who supports open-source education initiatives
+- **Mathematics Community**: For geometric principles and computational algorithms
+- **Open Source Advocates**: For promoting knowledge sharing and collaborative learning
+
+### 🎯 **Educational Impact**
+
+This project aims to demonstrate:
+- **Modern C++ Programming**: Best practices and industry standards
+- **Modular Architecture**: Professional code organization techniques
+- **Mathematical Computing**: Practical applications of algorithms
+- **Cross-Platform Development**: Writing portable and maintainable code
+
+---
+
+<div align="center">
+
+## ⭐ **Star this repository if you found it helpful!** ⭐
+
+**Made with ❤️ for the programming education community**
+
+[![GitHub stars](https://img.shields.io/github/stars/Amr4924/Simple-Cpp-Operations-Project?style=social)](https://github.com/Amr4924/Simple-Cpp-Operations-Project)
+
+---
+
+*© 2025 Amr Sa3dwy. Licensed for Educational Use Only.*
+
+</div>
