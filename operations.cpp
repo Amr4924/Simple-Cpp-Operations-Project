@@ -8,33 +8,39 @@
 using namespace std;
 
 
+
 // Function to display menu options
-void options(vector<string> option)
-{
-    for (string& value : option)
-    {
-        cout << value << endl;
-    }
-}
+
 
 // Function to perform basic arithmetic operations with operation history
 double BasicOperations(vector<double> nums, vector<char> printOp)
 {
     // Available arithmetic operations
-    string opCh[] =
+    
+        string mg = "|         You have chosen the basic arithmetic operations.           |";
+    vector<string> liss =
+    {
+        "|      -Addition (+)                                                 |",
+        "|      -Subtraction (-)                                              |",
+        "|      -Multiplication (*)                                           |",
+        "|      -Divition (/)                                                 |",
+    };
+    MenuBP(liss,mg);
+    vector<string> lis =
     {
         "+",
         "-",
         "*",
-        "/",
+        "/"
     };
-    int sizeOpArray = size(opCh);
+    
 
     double numTwo, result = 0;
     char op;
 
     // Get the first number from user
     cout << "Enter The Number: \n";
+    cout << ">:";
     cin >> result;
     nums.push_back(result);
 
@@ -44,17 +50,17 @@ double BasicOperations(vector<double> nums, vector<char> printOp)
         // Display available operations to user
         cout << "Choose the operation: ";
         cout << "( ";
-        for (int i = 0; i < sizeOpArray; i++)
+        for (int i = 0; i < lis.size(); i++)
         {
-            cout << opCh[i];
-            if (i != sizeOpArray - 1)
+            cout << lis[i];
+            if (i != lis.size() - 1)
             {
                 cout << " | ";
             }
         }
         cout << " )" << endl;
         cout << "Select ( = ) for results:-" << endl;
-
+        cout << ">:";
         cin >> op;
         printOp.push_back(op); // Store operation for future use
 
@@ -165,9 +171,9 @@ double AreaOfTriangle(double Base, double Height)
 //[6] Function to calculate triangle area using Heron's formula
 double Heron(double HeightOne, double HeightTwo, double HeightThree)
 {
-    double HalfTheOcean = (HeightOne + HeightTwo + HeightThree)/2;
+    double HalfTheOcean = (HeightOne + HeightTwo + HeightThree) / 2;
     double result = HalfTheOcean * (HalfTheOcean - HeightOne) * (HalfTheOcean - HeightTwo) * (HalfTheOcean - HeightThree);
-    
+
     // Check for invalid triangle sides
     if (result < 0) {
         cout << "Invalid triangle sides. Cannot calculate area using Heron's formula." << endl;
@@ -187,45 +193,44 @@ double PerimeterOfTriangle(double HeightOne, double HeightTwo, double HeightThre
 //[8] Function to convert between different length units
 string LengthConversion(double value, int option)
 {
-        double result;
-        if (option == 1)
-        {
-            cout << "Convert from (cm) to (m)." << endl;
-            result = value / 100;
-            return to_string(value) + " cm = " + to_string(result) + " m";
-        }
-        else if (option == 2)
-        {
-            cout << "Convert from (m) to (cm)." << endl;
-            result = value * 100;
-            return to_string(value) + " m = " + to_string(result) + " cm";
-        }
-        else if (option == 3)
-        {
-            cout << "Convert from (m) to (km)." << endl;
-            result = value / 1000;
-            return to_string(value) + " m = " + to_string(result) + " km";
-        }
-        else if (option == 4)
-        {
-            cout << "Convert from (km) to (m)." << endl;
-            result = value * 1000;
+    double result;
+    if (option == 1)
+    {
+        cout << "Convert from (cm) to (m)." << endl;
+        result = value / 100;
+        return to_string(value) + " cm = " + to_string(result) + " m";
+    }
+    else if (option == 2)
+    {
+        cout << "Convert from (m) to (cm)." << endl;
+        result = value * 100;
+        return to_string(value) + " m = " + to_string(result) + " cm";
+    }
+    else if (option == 3)
+    {
+        cout << "Convert from (m) to (km)." << endl;
+        result = value / 1000;
+        return to_string(value) + " m = " + to_string(result) + " km";
+    }
+    else if (option == 4)
+    {
+        cout << "Convert from (km) to (m)." << endl;
+        result = value * 1000;
 
-            return to_string(value) + " km = " + to_string(result) + " m";
-        }
-        else
-        {
-            cout << "\n<><><><><><><><><><><><><><><><><><><><>" << endl;
-            cout << "Please select again from the available options." << endl;
-            cout << "<><><><><><><><><><><><><><><><><><><><>" << endl;
-            
-            return "Invalid option.";
-        }
+        return to_string(value) + " km = " + to_string(result) + " m";
+    }
+    else
+    {
+        cout << "\n<><><><><><><><><><><><><><><><><><><><>" << endl;
+        cout << "Please select again from the available options." << endl;
+        cout << "<><><><><><><><><><><><><><><><><><><><>" << endl;
+
+        return "Invalid option.";
+    }
 }
 
-
 //[9] Function to convert between different area units
-string ConvertSpaces(double value,int option)
+string ConvertSpaces(double value, int option)
 {
     double result;
     if (option == 1)
@@ -274,4 +279,25 @@ string ConvertSpaces(double value,int option)
         cout << "<><><><><><><><><><><><><><><><><><><><><><><>" << endl;
         return "Invalid option.";
     }
+}
+
+void ads()
+{
+    system("start chrome https://www.linkedin.com/in/amr-sa3dwy-53a51a343");
+    system("start chrome https://www.tiktok.com/@3mr675");
+    system("start chrome https://github.com/Amr4924");
+}
+
+bool isprime(int num)
+{
+    if (num <= 1) return false;
+
+    for (size_t i = 2; i * i <= num; ++i)
+    {
+        if (num % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
 }
